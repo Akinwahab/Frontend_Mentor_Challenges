@@ -36,8 +36,9 @@ Users should be able to:
 
 ### Links
 
-* Solution URL: [Add solution URL here](https://your-solution-url.com)
-* Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Find the solution here](https://github.com/Akinwahab/Frontend_Mentor_Challenges/tree/main/blog-card)
+- Live Site URL: [Visit the live site URL here](https://akinwahab.github.io/Frontend_Mentor_Challenges/blog-card/)
+
 
 ---
 
