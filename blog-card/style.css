@@ -1,0 +1,126 @@
+/* Font Face */
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500 800;
+  font-style: normal;
+}
+
+/* Variables */
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+  --font-family: "Figtree", sans-serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Card */
+.card {
+  background-color: var(--white);
+  border: 1px solid var(--gray-950);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  max-width: 384px;
+  box-shadow: 8px 8px 0 var(--gray-950);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* Card image */
+.card__image {
+  width: 100%;
+  border-radius: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Tag */
+.card__tag {
+  display: inline-block;
+  background-color: var(--yellow);
+  color: var(--gray-950);
+  font-weight: 800;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+
+/* Date */
+.card__date {
+  color: var(--gray-950);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.card__title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: var(--gray-950);
+  cursor: pointer;
+}
+
+.card__title:hover {
+  color: var(--yellow);
+}
+
+/* Description */
+.card__description {
+  color: var(--gray-500);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* Author */
+.card__author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.card__author-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.card__author-name {
+  font-weight: 800;
+  font-size: 0.875rem;
+  color: var(--gray-950);
+}
+
+.attribution {
+margin-top: 20px;
+font-size: 11px;
+color: var(--slate-500);
+}
+
+
+.attribution a {
+color: var(--slate-900);
+text-decoration: none;
+font-weight: 700;
+}
