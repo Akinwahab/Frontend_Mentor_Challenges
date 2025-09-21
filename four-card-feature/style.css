@@ -1,0 +1,145 @@
+/* === Variables === */
+:root {
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+
+  --clr-grey-500: hsl(234, 12%, 34%);
+  --clr-grey-400: hsl(212, 6%, 44%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --ff-primary: 'Poppins', sans-serif;
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fs-body: 15px;
+
+  --max-width: 1120px;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  color: var(--clr-grey-400);
+  background-color: var(--clr-white);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+main {
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+/* Intro */
+.intro {
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.intro__title {
+  font-weight: var(--fw-light);
+  color: var(--clr-grey-500);
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.intro__title span {
+  font-weight: var(--fw-bold);
+}
+
+.intro__desc {
+  margin-top: 1rem;
+  max-width: 450px;
+  margin-inline: auto;
+}
+
+/* Cards layout */
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--clr-white);
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 2rem;
+  max-width: 350px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h2 {
+  color: var(--clr-grey-500);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1rem;
+}
+
+.card p {
+  margin-bottom: 1.5rem;
+}
+
+.card img {
+  align-self: flex-end;
+}
+
+.card--cyan {
+  border-top: 5px solid var(--clr-cyan);
+}
+.card--red {
+  border-top: 5px solid var(--clr-red);
+}
+.card--orange {
+  border-top: 5px solid var(--clr-orange);
+}
+.card--blue {
+  border-top: 5px solid var(--clr-blue);
+}
+
+.card-group {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1;
+}
+
+/*Attribution*/
+.attribution {
+  margin-top: 4rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--clr-cyan);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--clr-blue);
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .cards {
+    flex-direction: column;
+  }
+}
