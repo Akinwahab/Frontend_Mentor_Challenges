@@ -45,6 +45,7 @@ body {
   padding: 2.6rem 3.3rem;
   border-radius: 1rem;
   display: grid;
+  grid-auto-columns: 1fr;
   gap: 1rem;
   box-shadow: 21px 15px 84px -25px var(--Dark-blue);
 }
