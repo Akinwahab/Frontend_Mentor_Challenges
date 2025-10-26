@@ -1,0 +1,230 @@
+:root {
+  --color-bg: #ecf2f8;
+  --color-card-bg: #ffffff;
+  --color-primary: #48556a;
+  --color-text-secondary: #6e8098;
+  --color-share-bg: #48556a;
+  --color-share-text: #9daec2;
+  --radius: 10px;
+  --font-family: "Manrope", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--clr-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.article__wrapper {
+  width: 760px;
+  margin: 5rem auto;
+  box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+  display: flex;
+  align-items: center;
+}
+
+.article__image img {
+  border-radius: var(--radius) 0 0 var(--radius);
+  width: 300px;
+  height: 290px;
+  display: block;
+}
+
+.article__content {
+  background: var(--color-card-bg);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 1.78rem;
+}
+
+.article__title {
+  color: var(--color-primary);
+  font-size: 1.4rem;
+  font-weight: 900;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  padding-bottom: 1rem;
+}
+
+.article__text,
+.author__date {
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 20px;
+  padding-bottom: 0.5rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.author__info {
+  display: flex;
+  align-items: center;
+}
+
+.author__avatar {
+  border-radius: 50%;
+  width: 40px;
+  margin-right: 1rem;
+}
+
+.author__name {
+  color: var(--color-primary);
+  font-size: .9rem;
+  font-weight: 800;
+  line-height: 20px;
+  margin-top: 1rem;
+}
+
+.share__btn {
+  height: 32px;
+  width: 32px;
+  background: var(--color-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.share__popup {
+  background: var(--color-share-bg);
+  border-radius: 7px;
+  width: 248px;
+  height: 60px;
+  box-shadow: 0 40px 40px -10px rgba(201, 213, 225, 0.5);
+  position: absolute;
+  left: 215px;
+  top: -55px;
+}
+
+.share__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+  column-gap: 20px;
+}
+
+.share__label {
+  color: var(--color-share-text);
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 5px;
+}
+
+.mobile-author,
+.mobile-share__bar {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .article__wrapper {
+    width: 95%;
+    max-width: 730px;
+    margin: 1rem auto 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--clr-card);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  /* Image section */
+  .article__image {
+    width: 100%;
+  }
+
+  .article__image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .article__content {
+    border-radius: 0 0 var(--radius) var(--radius);
+    padding: 0;
+    width: 100%;
+    padding: 1.5rem 1rem 1rem; 
+    gap: 1rem;
+  }
+
+  .author {
+    display: none;
+  }
+
+  .article__title,
+  .article__text {
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .mobile-author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+
+  .mobile-author__info {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-share__btn,
+  .mobile-share__close {
+    height: 32px;
+    width: 32px;
+    background: var(--color-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+
+  .mobile-share__bar {
+    width: 100%;
+    background: var(--color-share-bg);
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    display: none;
+    margin-top: 3rem;
+    border-radius: 0 0 var(--radius) var(--radius);
+  }
+
+  .mobile-share__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+    column-gap: 20px;
+    padding-left: 1rem;
+  }
+}
