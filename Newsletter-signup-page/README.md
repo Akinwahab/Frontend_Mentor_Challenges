@@ -43,7 +43,6 @@ Users should be able to:
 
 | Sucess Desktop View | Sucess Mobile View |
 |---------------|--------------|
-
 | ![Desktop Screenshot](./assets/images/screenshot-desktop-success.png) | ![Mobile Screenshot](./assets/images/screenshot-mobile-sucess.png) |
 
 Erorr state
