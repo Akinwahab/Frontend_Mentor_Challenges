@@ -28,10 +28,10 @@ Users should be able to:
 
 |Tablet View| Mobile View |
 |---------------|--------------|
-| ![Tablet Screenshot](./stater-code/assets/Screenshot/Meet-landing-page%20-tablet.png) | ![Mobile Screenshot](./stater-code/assets/Screenshot/Meet-landing-page-mobile.png) |
+| ![Tablet Screenshot](./starter-code/assets/Screenshot/Meet-landing-page%20-tablet.png) | ![Mobile Screenshot](./starter-code/assets/Screenshot/Meet-landing-page-mobile.png) |
 
  Desktop View 
-![Desktop Screenshot](./stater-code/assets/Screenshot/Meet-landing-page-desktop.png)
+![Desktop Screenshot](./starter-code/assets/Screenshot/Meet-landing-page-desktop.png)
 ---
 
 ### Links
